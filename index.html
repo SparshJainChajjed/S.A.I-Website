@@ -4,123 +4,272 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>S.A.I - Smart Agricultural Irrigation</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 20px;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        h1, h2, h3 {
-            color: #2c7e2c; /* Green color for headings */
-        }
-        .section {
-            margin-bottom: 20px;
-        }
-        ul {
-            line-height: 1.6;
-        }
-        .tags {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-            margin-top: 10px;
-        }
-        .tag {
-            background-color: #e0e0e0;
-            padding: 5px 10px;
-            border-radius: 15px;
-            font-size: 0.9em;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Navigation -->
+    <nav class="nav" id="navigation">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="nav-logo-text">S.A.I</span>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#hero" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#how-it-works" class="nav-link">How It Works</a>
+                <a href="#features" class="nav-link">Features</a>
+                <a href="#technology" class="nav-link">Technology</a>
+                <a href="#challenges" class="nav-link">Challenges</a>
+                <a href="#accomplishments" class="nav-link">Accomplishments</a>
+                <a href="#future" class="nav-link">Future</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="nav-toggle-line"></span>
+                <span class="nav-toggle-line"></span>
+                <span class="nav-toggle-line"></span>
+            </div>
+        </div>
+    </nav>
 
-    <div class="container">
-        <header>
-            <h1>S.A.I - Smart Agricultural Irrigation</h1>
-            <p>Optimizing water usage in agriculture through smart technology.</p>
-        </header>
-
-        <main>
-            <section class="section">
-                <h2>Inspiration</h2>
-                <p>India faces a critical challenge of over-irrigation due to heavy and unpredictable rainfall, leading to water wastage and reduced crop productivity. This inspired us to create S.A.I, a system that ensures optimal water usage in agriculture.</p>
-            </section>
-
-            <section class="section">
-                <h2>What it does</h2>
-                <p>S.A.I (Smart Agricultural Irrigation) uses soil moisture sensors, a Raspberry Pi 5, and a weather API to monitor soil conditions and forecast rainfall. If rain is expected in the next 3 days, the system prevents irrigation. If not, it irrigates accordingly.</p>
-            </section>
-
-            <section class="section">
-                <h2>How we built it</h2>
-                <ul>
-                    <li><strong>Sensors:</strong> Deployed 8 soil moisture sensors to monitor ground conditions.</li>
-                    <li><strong>Hardware:</strong> Used Raspberry Pi 5 as the central processing unit.</li>
-                    <li><strong>Software:</strong> Integrated a weather API to predict rainfall and automated the irrigation logic.</li>
-                    <li><strong>Coding:</strong> Developed scripts to process sensor data and interact with the weather API.</li>
-                </ul>
-            </section>
-
-            <section class="section">
-                <h2>Challenges we ran into</h2>
-                <ul>
-                    <li>Calibrating soil moisture sensors for accurate readings.</li>
-                    <li>Ensuring reliable communication between the sensors and Raspberry Pi.</li>
-                    <li>Synchronizing irrigation decisions with weather API predictions.</li>
-                </ul>
-            </section>
-
-            <section class="section">
-                <h2>Accomplishments that we're proud of</h2>
-                <ul>
-                    <li>Successfully developed a system that reduces over-irrigation.</li>
-                    <li>Achieved seamless integration of hardware and software components.</li>
-                    <li>Created a scalable solution that can be adapted to various farm sizes.</li>
-                </ul>
-            </section>
-
-            <section class="section">
-                <h2>What we learned</h2>
-                <ul>
-                    <li>The importance of precision in sensor calibration.</li>
-                    <li>How to effectively integrate IoT systems with real-time APIs.</li>
-                    <li>Problem-solving under constraints, such as hardware limitations.</li>
-                </ul>
-            </section>
-
-            <section class="section">
-                <h2>What's next for S.A.I</h2>
-                <ul>
-                    <li>Adding machine learning to predict rainfall patterns more accurately.</li>
-                    <li>Expanding the system to include multi-crop irrigation strategies.</li>
-                    <li>Exploring solar power integration for sustainable operation.</li>
-                </ul>
-            </section>
-
-            <section class="section">
-                <h2>Built With</h2>
-                <div class="tags">
-                    <span class="tag">ai</span>
-                    <span class="tag">api</span>
-                    <span class="tag">ml</span>
-                    <span class="tag">openweather</span>
-                    <span class="tag">raspberry-pi</span>
-                    <span class="tag">soil</span>
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">S.A.I</h1>
+                <h2 class="hero-subtitle">Smart Agricultural Irrigation</h2>
+                <p class="hero-tagline">Smart water management for sustainable agriculture</p>
+                <p class="hero-description">Using soil moisture sensors, Raspberry Pi 5, and weather API to monitor soil conditions and forecast rainfall, preventing over-irrigation and optimizing water usage in agriculture.</p>
+                <div class="hero-actions">
+                    <a href="#about" class="btn btn--primary btn--lg">Learn More</a>
+                    <a href="#technology" class="btn btn--outline btn--lg">View Technology</a>
                 </div>
-            </section>
-        </main>
-    </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- About Section -->
+    <section class="section" id="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About S.A.I</h2>
+                <p class="section-subtitle">Revolutionizing agricultural water management through smart technology</p>
+            </div>
+            <div class="about-grid">
+                <div class="about-card">
+                    <div class="about-icon">🌱</div>
+                    <h3>The Problem</h3>
+                    <p>India faces a critical challenge of over-irrigation due to heavy and unpredictable rainfall, leading to water wastage and reduced crop productivity.</p>
+                </div>
+                <div class="about-card">
+                    <div class="about-icon">💡</div>
+                    <h3>Our Solution</h3>
+                    <p>If rain is expected in the next 3 days, the system prevents irrigation. If not, it irrigates accordingly based on soil moisture levels.</p>
+                </div>
+                <div class="about-card">
+                    <div class="about-icon">🚀</div>
+                    <h3>Why It Matters</h3>
+                    <p>Sustainable agriculture requires precise water management. Our system optimizes irrigation to conserve water while maximizing crop yield.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="section section--alt" id="how-it-works">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">How It Works</h2>
+                <p class="section-subtitle">Advanced sensor technology meets intelligent decision making</p>
+            </div>
+            <div class="workflow-grid">
+                <div class="workflow-step">
+                    <div class="step-number">1</div>
+                    <h3>Soil Monitoring</h3>
+                    <p>8 soil moisture sensors continuously monitor ground conditions across the farm</p>
+                </div>
+                <div class="workflow-step">
+                    <div class="step-number">2</div>
+                    <h3>Weather Analysis</h3>
+                    <p>Weather API integration forecasts rainfall for the next 3 days</p>
+                </div>
+                <div class="workflow-step">
+                    <div class="step-number">3</div>
+                    <h3>Smart Decision</h3>
+                    <p>Raspberry Pi 5 processes data and makes irrigation decisions</p>
+                </div>
+                <div class="workflow-step">
+                    <div class="step-number">4</div>
+                    <h3>Automated Control</h3>
+                    <p>System automatically controls irrigation based on soil and weather data</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="section" id="features">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Key Features</h2>
+                <p class="section-subtitle">Comprehensive capabilities for modern agriculture</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h3>Smart Monitoring</h3>
+                    <p>8 soil moisture sensors provide real-time ground condition data</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🌤️</div>
+                    <h3>Weather Integration</h3>
+                    <p>Weather API predicts rainfall for the next 3 days</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🤖</div>
+                    <h3>Automated Control</h3>
+                    <p>Prevents irrigation when rain is expected, optimizes when not</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📈</div>
+                    <h3>Scalable Solution</h3>
+                    <p>Adaptable to various farm sizes and irrigation needs</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology Stack Section -->
+    <section class="section section--alt" id="technology">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Technology Stack</h2>
+                <p class="section-subtitle">Cutting-edge technologies powering S.A.I</p>
+            </div>
+            <div class="tech-grid">
+                <div class="tech-item">
+                    <div class="tech-icon">🧠</div>
+                    <span>AI</span>
+                </div>
+                <div class="tech-item">
+                    <div class="tech-icon">🔗</div>
+                    <span>API</span>
+                </div>
+                <div class="tech-item">
+                    <div class="tech-icon">🤖</div>
+                    <span>ML</span>
+                </div>
+                <div class="tech-item">
+                    <div class="tech-icon">🌦️</div>
+                    <span>OpenWeather</span>
+                </div>
+                <div class="tech-item">
+                    <div class="tech-icon">🥧</div>
+                    <span>Raspberry Pi</span>
+                </div>
+                <div class="tech-item">
+                    <div class="tech-icon">🔬</div>
+                    <span>Soil Sensors</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Challenges & Solutions Section -->
+    <section class="section" id="challenges">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Challenges & Solutions</h2>
+                <p class="section-subtitle">Overcoming technical hurdles in agricultural automation</p>
+            </div>
+            <div class="challenges-grid">
+                <div class="challenge-card">
+                    <h3>Sensor Calibration</h3>
+                    <p class="challenge-problem">Calibrating soil moisture sensors for accurate readings</p>
+                    <p class="challenge-solution">Developed precise calibration protocols and implemented real-time validation checks</p>
+                </div>
+                <div class="challenge-card">
+                    <h3>Reliable Communication</h3>
+                    <p class="challenge-problem">Ensuring reliable communication between sensors and Raspberry Pi</p>
+                    <p class="challenge-solution">Implemented robust communication protocols with error handling and retry mechanisms</p>
+                </div>
+                <div class="challenge-card">
+                    <h3>Weather Synchronization</h3>
+                    <p class="challenge-problem">Synchronizing irrigation decisions with weather API predictions</p>
+                    <p class="challenge-solution">Built intelligent timing algorithms that optimize API calls and decision-making cycles</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Accomplishments Section -->
+    <section class="section section--alt" id="accomplishments">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Accomplishments</h2>
+                <p class="section-subtitle">Key achievements and milestones</p>
+            </div>
+            <div class="accomplishments-grid">
+                <div class="accomplishment-card">
+                    <div class="accomplishment-icon">💧</div>
+                    <h3>Reduced Over-irrigation</h3>
+                    <p>Successfully developed a system that reduces over-irrigation and water wastage</p>
+                </div>
+                <div class="accomplishment-card">
+                    <div class="accomplishment-icon">⚙️</div>
+                    <h3>Seamless Integration</h3>
+                    <p>Achieved seamless integration of hardware and software components</p>
+                </div>
+                <div class="accomplishment-card">
+                    <div class="accomplishment-icon">📏</div>
+                    <h3>Scalable Solution</h3>
+                    <p>Created a scalable solution that can be adapted to various farm sizes</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Future Plans Section -->
+    <section class="section" id="future">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Future Plans</h2>
+                <p class="section-subtitle">The next phase of agricultural innovation</p>
+            </div>
+            <div class="future-grid">
+                <div class="future-card">
+                    <div class="future-icon">🧠</div>
+                    <h3>Machine Learning</h3>
+                    <p>Adding machine learning to predict rainfall patterns more accurately</p>
+                </div>
+                <div class="future-card">
+                    <div class="future-icon">🌾</div>
+                    <h3>Multi-crop Strategies</h3>
+                    <p>Expanding the system to include multi-crop irrigation strategies</p>
+                </div>
+                <div class="future-card">
+                    <div class="future-icon">☀️</div>
+                    <h3>Solar Power</h3>
+                    <p>Exploring solar power integration for sustainable operation</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-main">
+                    <h3>S.A.I</h3>
+                    <p>Smart Agricultural Irrigation - Revolutionizing water management for sustainable agriculture</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 S.A.I - Smart Agricultural Irrigation. Built for sustainable farming.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
 </body>
 </html>
